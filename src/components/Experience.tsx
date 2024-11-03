@@ -8,8 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { ExperienceLabel } from "./ExperienceLabel";
 import SectionHeading from "./SectionHeading";
 
-export default function Experience({ isMobile }: { isMobile?: boolean }): JSX.Element {
-  isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+export default function Experience({ isMobile }: { isMobile: boolean }): JSX.Element {
   const { theme } = useTheme();
   const variants = {
     left: {

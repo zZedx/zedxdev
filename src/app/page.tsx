@@ -5,11 +5,13 @@ import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import SectionDivider from "@/components/SectionDivider";
 import Skills from "@/components/Skills";
+import { isMobileDevice } from "@/lib/utils";
 import React from "react";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
+  const isMobile = isMobileDevice();
   return (
     <main className="flex flex-col items-center justify-center px-4 overflow-x-hidden">
       <Intro />
@@ -17,7 +19,7 @@ const Home: React.FC<HomeProps> = () => {
       <About />
       <Projects />
       <Skills />
-      <Experience />
+      <Experience isMobile={isMobile} />
       <Contact />
     </main>
   );
