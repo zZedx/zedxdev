@@ -28,7 +28,7 @@ export default function Contact(): JSX.Element {
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:joyyujiepeng@gmail.com">
+        <a className="underline" href="mailto:kartikajmera890@gmail.com">
           Kartikajmera890@gmail.com
         </a>{" "}
         {/* or through this form. */}
