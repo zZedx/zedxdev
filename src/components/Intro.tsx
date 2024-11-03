@@ -106,8 +106,8 @@ export default function Intro(): JSX.Element {
         {/* <Link
           href="#contact"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
           className="group bg-gray-900 px-4 py-2 text-sm sm:text-lg text-white sm:px-7 sm:py-3 flex items-center gap-2  rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
