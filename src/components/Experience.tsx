@@ -9,7 +9,7 @@ import { ExperienceLabel } from "./ExperienceLabel";
 import SectionHeading from "./SectionHeading";
 
 export default function Experience({ isMobile }: { isMobile?: boolean }): JSX.Element {
-  isMobile = window && window.innerWidth < 640;
+  isMobile = typeof window !== "undefined" && window.innerWidth < 640;
   const { theme } = useTheme();
   const variants = {
     left: {
