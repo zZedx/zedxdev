@@ -1,6 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+import playafro from "/public/project-images/playafro.png";
+import lehlah from "/public/project-images/lehlah.png";
+import livon from "/public/project-images/livon.png";
 
 export const links = [
   {
@@ -23,12 +26,15 @@ export const links = [
     name: "Experiences",
     hash: "#experience",
   },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Full Stack Developer",
-    location: React.createElement(
+    title: React.createElement(
       "span",
       {},
       React.createElement(
@@ -40,18 +46,19 @@ export const experiencesData = [
         },
         "Jetbro",
       ),
-      " Ahmedabad, India",
+      " - Full Stack Developer",
     ),
+    location: "Ahmedabad, India",
     description:
-      "Developed and maintained Jetbro's web application using React, Next.js, and TailwindCSS. Implemented a new feature that allows users to create and manage their own custom domains. Enhanced the application's performance by optimizing the codebase and reducing the bundle size by 30%.",
+      "Played a key role in multiple high-impact live projects, including Saffola, Livon, Jetbro and Lehlah .Worked closely with cross-functional teams, contributing to the development and deployment of dynamic, user-centric web applications. Demonstrated adaptability and expertise across various project demands.",
     icon: React.createElement(RiNextjsFill),
     date: "2023 Dec - Present",
   },
   {
     title: "Freelance Frontend Developer",
-    location: "- Remote",
+    location: "Remote",
     description:
-      "Developed and maintained web applications for clients using React, Next.js, and TailwindCSS. Implemented new features and resolved bugs to improve the application's performance and user experience.",
+      "Developed and maintained web applications for clients using Next.js, TypeScript and TailwindCSS. Implemented new features and resolved bugs to improve the application's performance and user experience.",
     icon: React.createElement(FaReact),
     date: "2024 March - Present",
   },
@@ -65,7 +72,7 @@ export const projectsData = [
     description:
       "A music promotion platform that allows artists to promote their music and reach a wider audience. Artists can create an account, upload their music, and share it with their fans. Users can discover new music, follow their favorite artists, and create playlists.",
     tags: ["Next.js", "TypeScript", "SCSS"],
-    imageUrl: "",
+    imageUrl: playafro,
     projectUrl: null,
     demoUrl: "https://playafro.com/",
   },
@@ -74,9 +81,18 @@ export const projectsData = [
     description:
       "Developed Lehlah - A social media platform that allows users to share their thoughts, photos, and videos with their friends and family. Users can create an account, post updates, like and comment on posts, and follow other users.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    imageUrl: "",
+    imageUrl: lehlah,
     projectUrl: null,
     demoUrl: "https://lehlah.club/",
+  },
+  {
+    title: "Livon",
+    description:
+      "Developed a corporate website for Livon to showcase their products and services. The website is built using Next.js, TypeScript, and TailwindCSS.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    imageUrl: livon,
+    projectUrl: null,
+    demoUrl: "https://mylivonmysalon.com/",
   },
 ];
 

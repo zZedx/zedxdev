@@ -11,7 +11,7 @@ type ActionSectionContextProviderProps = {
 type ActionSectionContextType = {
   activeSection: SectionName;
   setActiveSection: Dispatch<
-    SetStateAction<"Home" | "About" | "Projects" | "Skills" | "Experiences">
+    SetStateAction<"Home" | "About" | "Projects" | "Skills" | "Experiences" | "Contact">
   >;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
