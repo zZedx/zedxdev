@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
+import Link from "next/link";
 // import SubmitBtn from "./SubmitBtn";
 // import toast, { Toaster } from "react-hot-toast";
 
@@ -28,9 +29,9 @@ export default function Contact(): JSX.Element {
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:kartikajmera890@gmail.com">
+        <Link className="underline" href="mailto:kartikajmera890@gmail.com">
           Kartikajmera890@gmail.com
-        </a>{" "}
+        </Link>{" "}
         {/* or through this form. */}
       </p>
       {/* <Toaster /> */}
