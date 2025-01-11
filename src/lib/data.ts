@@ -1,9 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import playafro from "/public/project-images/playafro.png";
+import cropbasket from "/public/project-images/cropbasket.webp";
 import lehlah from "/public/project-images/lehlah.png";
-import livon from "/public/project-images/livon.png";
+import playafro from "/public/project-images/playafro.png";
 
 export const links = [
   {
@@ -55,10 +55,10 @@ export const experiencesData = [
     date: "2023 Dec - Present",
   },
   {
-    title: "Freelance Frontend Developer",
+    title: "Freelance Developer",
     location: "Remote",
     description:
-      "Developed and maintained web applications for clients using Next.js, TypeScript and TailwindCSS. Implemented new features and resolved bugs to improve the application's performance and user experience.",
+      "Developed and maintained web applications for clients using Next.js, TypeScript, React, Node.js, Serverless, etc. Implemented new features and resolved bugs to improve the application's performance and user experience.",
     icon: React.createElement(FaReact),
     date: "2024 March - Present",
   },
@@ -67,6 +67,15 @@ export const experiencesData = [
 export type ProjectTags = (typeof projectsData)[number]["tags"];
 
 export const projectsData = [
+  {
+    title: "Cropbasket - B2B E-commerce Platform",
+    description:
+      "Developed Cropbasket - A B2B E-commerce platform that connects farmers and retailers. Retailers can place orders for fresh fruits and vegetables, and farmers can list their products for sale. The platform is built using Nest.js, Next.js, TypeScript, and MySQL.",
+    tags: ["Nest.js", "Next.js", "TypeScript", "MySQL"],
+    imageUrl: cropbasket,
+    projectUrl: null,
+    demoUrl: "https://play.google.com/store/apps/details?id=in.cropbasketapp&pcampaignid=web_share",
+  },
   {
     title: "Playafro - Music Promotion Platform",
     description:
@@ -79,20 +88,11 @@ export const projectsData = [
   {
     title: "LehLah",
     description:
-      "Developed Lehlah - A social media platform that allows users to share their thoughts, photos, and videos with their friends and family. Users can create an account, post updates, like and comment on posts, and follow other users.",
+      "A social commerce platform sitting at the intersection of brands, influencers, and end customers. We help influencers monetize their content!",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     imageUrl: lehlah,
     projectUrl: null,
     demoUrl: "https://lehlah.club/",
-  },
-  {
-    title: "Livon",
-    description:
-      "Developed a corporate website for Livon to showcase their products and services. The website is built using Next.js, TypeScript, and TailwindCSS.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    imageUrl: livon,
-    projectUrl: null,
-    demoUrl: "https://mylivonmysalon.com/",
   },
 ];
 
@@ -108,6 +108,7 @@ export const skillsData = [
   "Nest",
   "MySQL",
   "Docker",
+  "AWS",
   "ES Lint",
   "Git",
   "Github",

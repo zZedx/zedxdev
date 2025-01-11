@@ -3,7 +3,7 @@
 // import { useActiveSectionContext } from "@/context/ActionSectionProvider";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { Source_Code_Pro } from "next/font/google";
+import { JetBrains_Mono, Source_Code_Pro } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
@@ -12,6 +12,12 @@ import { HiDownload } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" });
+
+const jetbrains_mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: "normal",
+});
 
 export default function Intro(): JSX.Element {
   const { ref } = useSectionInView("Home");
@@ -62,7 +68,9 @@ export default function Intro(): JSX.Element {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className={`${sourceCodePro.className} text-sm tracking-wider `}>Hi, my name is</span>
-        <span className="text-center text-4xl font-bold tracking-tight  sm:text-5xl block">
+        <span
+          className={` ${jetbrains_mono.className} text-center text-4xl font-bold tracking-widest  sm:text-5xl block`}
+        >
           Kartik
         </span>
         <span className={`${sourceCodePro.className} text-sm tracking-wider`}>I&apos;m a </span>
